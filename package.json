@@ -12,6 +12,7 @@
     "@ai-sdk/anthropic": "^3.0.78",
     "@ai-sdk/react": "^3.0.186",
     "@base-ui/react": "^1.4.1",
+    "@modelcontextprotocol/sdk": "^1.29.0",
     "ai": "^6.0.184",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
