@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -28,7 +29,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="min-h-screen flex flex-col">
           <header className="sticky top-0 z-50 w-full border-b border-border bg-background/90 backdrop-blur">
             <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4">
-              <Link href="/" className="font-bold">
+              <Link href="/" className="flex items-center gap-2 font-bold">
+                <Image
+                  src="/kite-logo-mark-black.png"
+                  alt="Kite"
+                  width={28}
+                  height={28}
+                  className="h-7 w-7 object-contain"
+                />
                 AgentPilot
               </Link>
               <div className="flex items-center gap-4">

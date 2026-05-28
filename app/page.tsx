@@ -2,6 +2,7 @@
 
 import { useChat } from "@ai-sdk/react";
 import { useRef, useEffect, useState } from "react";
+import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -31,6 +32,14 @@ export default function ChatPage() {
           {messages.length === 0 && (
             <div className="flex min-h-[calc(100vh-11rem)] items-center justify-center">
               <Card className="max-w-xl border-border/80 bg-card/85 p-8 text-center shadow-sm backdrop-blur">
+                <Image
+                  src="/kite-logo-mark-black.png"
+                  alt="Kite"
+                  width={44}
+                  height={44}
+                  priority
+                  className="mx-auto mb-4 h-11 w-11 object-contain"
+                />
                 <p className="mb-2 text-xs font-semibold uppercase text-muted-foreground">
                   Kite Mainnet AI assistant
                 </p>
